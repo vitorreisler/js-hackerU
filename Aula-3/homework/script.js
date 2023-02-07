@@ -4,7 +4,7 @@ let age = prompt ("Whats your age")
 console.log (age)
 let email = prompt ("What's your email ?")
 console.log (email)
-let gender = prompt ("What's your gender ?")
+let gender = prompt ("What's your gender ? Just Male or Female")
 console.log (gender)
 
 if (gender === "Male" || gender === "male" || gender === "Female" || gender === "female") {
