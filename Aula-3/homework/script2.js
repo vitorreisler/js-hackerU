@@ -1,7 +1,7 @@
 let userName = prompt ("What's your name ?")
-let age = prompt ("Whats your age")
+let age = Number(prompt ("Whats your age"))
 let email = prompt ("What's your email ?")
-let gender = prompt ("What's your gender ? Just Male or Female")
+let gender = prompt ("What's your gender ?" , "Please insert Male or Female")
 
 if (gender === "Male" || gender === "male" || gender === "Female" || gender === "female") {
     alert (`Welcome ${userName}`)
@@ -10,12 +10,14 @@ if (gender === "Male" || gender === "male" || gender === "Female" || gender === 
     alert ("Please insert valid data")
 }
 
+
 let newsLetter = confirm ("would you like to subscribe to our newsletter?")
 if (newsLetter == true) {
     alert (`Thank you, your email ${email} was registered ` )
 } else {
     alert (`Your lost ${userName}` )
 }
+
 
 if (age > 0 && age <= 5 ){
     alert (`With ${age} years old you are a baby`)
