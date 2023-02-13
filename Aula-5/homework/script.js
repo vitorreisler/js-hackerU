@@ -23,15 +23,15 @@ console.log (fruit.yellow_fruits.apples) */
 
 let allProducts = {
     product1: {
-        product: "pen",
-        color: "black",
-        type: "whiteboard",
+        product: "Adidas SuperStar",
+        color: "white",
+        size: "42",
         quantity: 0,
     },
     product2: {
-        product: "paper",
-        color: "white",
-        type: "recycled",
+        product: "JordanAir",
+        color: "white / red",
+        size: "43",
         quantity: 0,
     }
 
