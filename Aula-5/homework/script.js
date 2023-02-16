@@ -17,7 +17,7 @@ yellow_fruits: {
 }
 }
 console.log (fruit)
-console.log (fruit.green_fruits)
+console.log (fruit.green_fruits).
 
 console.log (fruit.yellow_fruits.apples) */
 
