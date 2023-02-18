@@ -14,3 +14,5 @@ function toShow() {
     console.log (pokedex)
 
 }
+
+console.log (pokedex[0])
