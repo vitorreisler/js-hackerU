@@ -18,12 +18,12 @@ function num1ToNum2() {
         alert ("Please insert valid data")
     } else if (i < num2) {
         while (i < num2) {
-            ++i
+            i = i + 2
             console.log (i)
         }
     } else if (i > num2) {
         while (i > num2) {
-            i--
+            i = i - 2
             console.log (i)
         }
 
