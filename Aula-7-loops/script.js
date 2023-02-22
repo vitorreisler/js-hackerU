@@ -1,6 +1,6 @@
 //EX 1
 function password (){
-let password //PODERIAMOS TIRAR O PROMPT E DEIXAR SO O LET PASSWORD
+let password //PODERIAMOS TIRAR O PROMPT E DEIXAR SO O LET PASSWORD PQ IRÁ RETORNAR FALSE NA PRIMEIRA TENTATIVA
 let i = 0
 while (password !== "1234"){
 password = prompt("Please insert password:")
@@ -63,7 +63,7 @@ let usersList = [
 }
 
 //ex 4
-
+function ex4() {
 let list = {
     "_id": "63f3b7cadf9d3ea073e07d6f",
     "index": 0,
@@ -109,9 +109,10 @@ let list = {
     "greeting": "Hello, Mcintosh Mills! You have 3 unread messages.",
     "favoriteFruit": "strawberry"
   }
-  for (let value in list) {
-      console.log (value, list[value])
-  }
+ for (let value in list) {
+  console.log (`${value} = > ${list[value]}`)
+ }
+}
 
 
 /*let names = [
