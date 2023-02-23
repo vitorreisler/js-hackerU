@@ -8,6 +8,7 @@ function countTillNum() {
 }
 
 function num1ToNum2() {
+    let userChoosenNumbers = []
     let num1 = Number(prompt("Please choose a number"))
     let i = num1
     if (Number.isNaN(num1)) {
@@ -19,17 +20,24 @@ function num1ToNum2() {
     } else if (i < num2) {
         while (i < num2) {
             i = i + 2
-            console.log (i)
+            choosenNumbers = userChoosenNumbers.push (i)
+            console.log (userChoosenNumbers)
         }
     } else if (i > num2) {
         while (i > num2) {
             i = i - 2
+            choosenNumbers = userChoosenNumbers.push (i)
+            console.log (userChoosenNumbers)
             console.log (i)
+            
         }
-
+        
     }
+    alert ( `the count was ${userChoosenNumbers}`)
     
-} }
+} 
+}
+
 
 function multi() {
     let i = 0
@@ -53,9 +61,14 @@ function multi() {
 }
 
 function build() {
-   for (let i= 0; i < 5; i++){
-    console.log (i)
-   }
+    let rows = 5
+    let star = "* "
+    for (let i = 1; i <= 5 ; i++) {
+        for (let draw = 1; draw < i ; draw++ )
+        console.log (star += "* ")
+    }
+    alert ("The first star its you ❤️")
+    
 }
 
 
