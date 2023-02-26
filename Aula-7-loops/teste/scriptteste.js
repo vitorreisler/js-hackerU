@@ -63,6 +63,7 @@ function multi() {
 function build() {
     let rows = 5
     let star = "* "
+    console.log (star)
     for (let i = 1; i <= 5 ; i++) {
         for (let draw = 1; draw < i ; draw++ )
         console.log (star += "* ")

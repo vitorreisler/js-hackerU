@@ -19,12 +19,17 @@ alert ("You should not pass")
 // EX 2
 
 function evenNumber () {
+  let countTill = []
 let num1 = Number(prompt ("Choose a number: "))
-let i = 0
-while ( i < num1) {
-i = i + 2
-console.log (i)
+if (!Number.isNaN(num1)) {
+  let i = 0
+  while ( i < num1) {
+    countTill.push(i)
+  i = i + 2
+  console.log (i)
+  }
 }
+alert (`From 0 your count jumping 2 numbers is ${countTill}`)
 }
 
 //ex 3 
