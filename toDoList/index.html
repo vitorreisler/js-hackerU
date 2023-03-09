@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="js/toDoList.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="toDoContainer">
+            <header>
+                <h1> To Do List </h1>
+            </header>
+            <form id="toDoForm">
+                <p>Adicione a sua tarefa</p>
+                <div class="form-control">
+                    <input type="text" name="" id="toDoInput" placeholder="Qual será a sua terafa ?">
+                    <button type="submit">
+                        <i class="fa-thin fa-plus"></i>
+                    </button>
+                </div>
+            </form>
+            <form id="editForm" class="">
+                <p>Edite a sua tarefa</p>
+                <div class="formControl">
+                    <input type="text" name="" id="editInput">
+                    <button type="submit">
+                        <i class="fa-solid fa-check fa-double"></i>
+                    </button>
+                </div>
+                <button id="cancelEditBtn">Cancelar</button>
+            </form>
+            <div class="toDoList">
+                <div class="toDo done">
+                    <h3>Estou fazendo algo</h3>
+                    <button class="finiShToDo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="editToDo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="removeToDo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            <div class="toDoList">
+                <div class="toDo">
+                    <h3>Estudar JS</h3>
+                    <button class="finiShToDo">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="editToDo">
+                        <i class="fa-solid fa-pen"></i>
+                    </button>
+                    <button class="removeToDo">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

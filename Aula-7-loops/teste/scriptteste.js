@@ -88,6 +88,7 @@ function countTillNum() {
     }
 }
 
+
 function num1ToNum2() {
     choosenNumber = []
     let num1 = Number(prompt ("Please,choose de first number: "))
