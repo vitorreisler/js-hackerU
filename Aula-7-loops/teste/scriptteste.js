@@ -1,4 +1,5 @@
-function countTillNum() {
+
+/*function countTillNum() {
     let num1 = Number(prompt("Please choose a number"))
     let i = 0
     while (i < num1) {
@@ -59,17 +60,79 @@ function multi() {
     }
     }
 }
+*/
 
 function build() {
     let rows = 5
     let star = "* "
-    console.log (star)
+    console.log (`${star} this star it's you ❤️ `)
     for (let i = 1; i <= 5 ; i++) {
         for (let draw = 1; draw < i ; draw++ )
         console.log (star += "* ")
-    }
-    alert ("The first star its you ❤️")
-    
+    }    
 }
 
 
+
+
+function countTillNum() {
+    let i = 0
+    let num1 = Number(prompt ("Till which number do you want to count"))
+    if (Number.isNaN(num1)) {
+        alert ("Please insert valid data")
+    } else {
+        while (i < num1) {
+            console.log (i)
+            i ++
+        }
+    }
+}
+
+function num1ToNum2() {
+    choosenNumber = []
+    let num1 = Number(prompt ("Please,choose de first number: "))
+    let i = num1
+    if (Number.isNaN(num1)) {
+        alert ("Please insert valid data")
+    } else {
+        let num2 = Number(prompt("Please, choose the second number:"))
+        if (Number.isNaN(num2)){
+            alert ("Please insert valid data")
+        } else if ( i < num2) {
+            console.log (i)
+                     while ( i < num2) {
+                        choosenNumber.push(i)
+                         i = i + 2
+                         console.log (i)
+                        }
+                        alert (`${choosenNumber},${i}`)
+    } else if (i > num2) {
+        console.log(i)
+        while ( i > num2) {
+            choosenNumber.push(i)
+            i = i - 2
+            console.log (i)
+        }
+        alert (`${choosenNumber},${i}`)
+    }
+}
+}
+
+
+function multi() {
+    let i = 0
+    let userNum = Number(prompt("Which number do you want to know the multiplication table ?"))
+    if (Number.isNaN(userNum)) {
+        alert ("please insert valid data")
+    } else {
+        let userNum2 = Number(prompt("How many times do you want to multiplicate ? "))
+        if (Number.isNaN(userNum2)){
+            alert ("Please insert valid data")
+        } else {
+           while (userNum < userNum2){
+            
+
+           }
+        }
+    }
+}
