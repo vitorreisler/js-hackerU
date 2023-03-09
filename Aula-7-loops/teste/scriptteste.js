@@ -120,7 +120,8 @@ function num1ToNum2() {
 
 
 function multi() {
-    let i = 0
+    let res = document.getElementById("res")
+    let results = []
     let userNum = Number(prompt("Which number do you want to know the multiplication table ?"))
     if (Number.isNaN(userNum)) {
         alert ("please insert valid data")
@@ -129,10 +130,17 @@ function multi() {
         if (Number.isNaN(userNum2)){
             alert ("Please insert valid data")
         } else {
-           while (userNum < userNum2){
-            
-
-           }
+            for (let i = 1; i < userNum2 + 1; ++i) {
+                let result = userNum*i
+                results.push(result)
+            }
+            for (let runArray of results) {
+                //console.log(results[runArray])
+            }
         }
     }
+    console.log(results);
+    res.innerHTML = `${results}`
 }
+
+
