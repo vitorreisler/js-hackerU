@@ -1,0 +1,44 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body {
+    width: 99vw;
+    background-color: ;
+}
+div.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div#header {
+    padding: 0 70px;
+    background-color: darkgreen;
+}
+div p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+div#header h3 {
+    color: white;
+}
+div#options {
+    padding: 5px;
+}
+button#restartBoard {
+}
+
+div#game {
+    padding: 20px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.squares {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+}
